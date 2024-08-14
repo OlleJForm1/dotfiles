@@ -25,6 +25,8 @@ key_mapper('n', '<leader>fh', ':lua require"telescope.builtin".help_tags()<CR>')
 key_mapper('n', '<leader>fb', ':lua require"telescope.builtin".buffers()<CR>')
 key_mapper('n', '<leader>tt', ':lua require"telescope.builtin".treesitter()<CR>')
 key_mapper('n', '<leader>tq', ':lua require"telescope.builtin".builtin()<CR>')
+key_mapper('n', '<leader>fw', ':lua require"telescope.builtin".grep_string()<CR>')
+key_mapper('n', '<leader>gr', ':lua require"telescope.builtin".lsp_references()<CR>')
 
 key_mapper('n', '<leader>tf', ':lua require"telescope".extensions.file_browser.file_browser()<CR>')
 key_mapper('n', '<leader>tg', ':lua require"telescope".extensions.file_browser.file_browser({ path = "%:p:h" })<CR>')
