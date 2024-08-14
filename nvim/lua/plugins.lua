@@ -31,10 +31,7 @@ packer.startup(function(use)
   use 'christoomey/vim-tmux-navigator'
 
   use({
-    "stevearc/aerial.nvim",
-    config = function()
-      require("aerial").setup()
-    end,
+    "stevearc/aerial.nvim"
   })
 
   use {
