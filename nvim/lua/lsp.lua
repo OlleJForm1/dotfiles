@@ -6,7 +6,7 @@ local default_config = {
   on_attach = custom_on_attach,
 }
 -- setup language servers here
-lspconfig.tsserver.setup(default_config)
+lspconfig.ts_ls.setup(default_config)
 lspconfig.pyright.setup(default_config)
 lspconfig.volar.setup(default_config)
 lspconfig.csharp_ls.setup({
