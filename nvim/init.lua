@@ -27,7 +27,7 @@ vim.g.OmniSharp_server_use_mono = 1
 require('keybinds')
 require('plugins')
 require('lsp')
-require('colors')
+require('style')
 require('leapkeys')
 require('trscontext')
 require('completion')
