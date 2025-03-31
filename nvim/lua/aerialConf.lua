@@ -10,7 +10,8 @@ require("aerial").setup({
 
   layout = {
     max_width = 0.5,
-    min_width = 0.4
+    width = 100,
+    min_width = 100
   },
 
   disable_max_lines = 50000,
