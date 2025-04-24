@@ -63,8 +63,6 @@ packer.startup(function(use)
 
   use 'sindrets/diffview.nvim'
 
-  use 'github/copilot.vim'
-
   use 'tpope/vim-fugitive'
   
   use 'christoomey/vim-conflicted'
