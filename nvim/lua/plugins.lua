@@ -47,8 +47,6 @@ packer.startup(function(use)
       requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
 
-  use 'ggandor/leap.nvim'
-
   use {
     'rmagatti/goto-preview',
     config = function()
@@ -68,6 +66,8 @@ packer.startup(function(use)
   use 'christoomey/vim-conflicted'
 
   use 'junegunn/gv.vim'
+
+  use "jamessan/vim-gnupg"
 
   end
 )

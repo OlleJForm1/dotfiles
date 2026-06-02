@@ -34,3 +34,22 @@ require('completion')
 require('aerialConf')
 require('treesittersetup')
 
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    local gpg_group = vim.api.nvim_create_augroup("GPGNoSwap", { clear = true })
+
+    vim.api.nvim_create_autocmd({"BufReadPost", "BufNewFile"}, {
+      pattern = "*.gpg",
+      group = gpg_group,
+      callback = function()
+        local opt = vim.opt_local
+        opt.swapfile = false
+        opt.backup = false
+        opt.writebackup = false
+        opt.undofile = false
+        print("Secure GPG buffer activated!")
+      end,
+    })
+  end
+})
+
