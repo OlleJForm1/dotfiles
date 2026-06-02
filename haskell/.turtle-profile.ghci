@@ -1,4 +1,0 @@
-:set -XOverloadedStrings
-import Turtle
-import Turtle.Prelude
-

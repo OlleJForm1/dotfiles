@@ -1,0 +1,5 @@
+packages:
+  .
+  ./turtle-profile-shared
+  ./turtle-profile-local
+

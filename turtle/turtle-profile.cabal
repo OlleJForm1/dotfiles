@@ -1,0 +1,34 @@
+cabal-version:   3.14
+name:            turtle-profile
+version:         0.1.0.0
+license:         NONE
+author:          Olle Jernelöf
+maintainer:      olle@form1.se
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+library lib
+    import:           warnings
+    exposed-modules:  Profile
+    build-depends:    base ^>=4.21.0.0,
+                      turtle-profile-shared,
+                      turtle-profile-local,
+                      turtle,
+                      fuzzyfind,
+                      foldl,
+                      process,
+                      text,
+                      aeson,
+                      parsec,
+                      mtl,
+                      transformers,
+                      relude,
+                      directory
+    mixins: base hiding (Prelude)
+          , relude (Relude as Prelude)
+          , relude
+    hs-source-dirs:   src
+    default-language: Haskell2010
