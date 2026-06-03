@@ -1,4 +1,5 @@
 :set -XOverloadedStrings
+:set +m
 import Turtle as TU
 import Turtle.Prelude as TU
 import qualified Control.Foldl as F
