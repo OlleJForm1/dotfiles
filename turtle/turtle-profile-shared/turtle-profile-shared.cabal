@@ -24,7 +24,8 @@ library
                       mtl,
                       transformers,
                       relude,
-                      directory
+                      directory,
+                      network
     mixins: base hiding (Prelude)
           , relude (Relude as Prelude)
           , relude
