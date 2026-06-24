@@ -3,7 +3,7 @@ name:            turtle-profile-shared
 version:         0.1.0.0
 license:         NONE
 author:          Olle Jernelöf
-maintainer:      olle@form1.se
+maintainer:      br3akp01nt@protonmail.com
 build-type:      Simple
 extra-doc-files: CHANGELOG.md
 

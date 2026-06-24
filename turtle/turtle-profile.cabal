@@ -2,8 +2,8 @@ cabal-version:   3.14
 name:            turtle-profile
 version:         0.1.0.0
 license:         NONE
-author:          Olle Jernelöf
-maintainer:      olle@form1.se
+author:          br3akp01nt
+maintainer:      br3akp01nt@protonmail.com
 build-type:      Simple
 extra-doc-files: CHANGELOG.md
 
@@ -26,7 +26,9 @@ library lib
                       mtl,
                       transformers,
                       relude,
-                      directory
+                      directory,
+                      filepath,
+                      network
     mixins: base hiding (Prelude)
           , relude (Relude as Prelude)
           , relude
