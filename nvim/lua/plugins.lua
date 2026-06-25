@@ -74,5 +74,7 @@ packer.startup(function(use)
 
   use "jamessan/vim-gnupg"
 
+  use 'https://codeberg.org/andyg/leap.nvim'
+
   end
 )
