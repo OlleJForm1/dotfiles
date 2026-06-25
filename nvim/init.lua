@@ -29,10 +29,11 @@ require('plugins')
 require('lsp')
 require('style')
 require('leapkeys')
-require('trscontext')
 require('completion')
 require('aerialConf')
 require('treesittersetup')
+require('tsmsetup')
+require('foldsetup')
 
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()

@@ -17,9 +17,13 @@ packer.init({
 packer.startup(function(use)
   use('wbthomason/packer.nvim')
   
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'nvim-treesitter/nvim-treesitter-context'
+  use 'neovim-treesitter/treesitter-parser-registry'
+  use 'neovim-treesitter/nvim-treesitter'
   use 'sheerun/vim-polyglot'
+
+  use 'romus204/tree-sitter-manager.nvim'
+
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
   use 'neovim/nvim-lspconfig'
   --use 'OmniSharp/omnisharp-vim'
@@ -36,6 +40,7 @@ packer.startup(function(use)
 
   use {
     'MrcJkb/haskell-tools.nvim',
+    branch = "main",
     requires = {
       'nvim-lua/plenary.nvim',
       'nvim-telescope/telescope.nvim'
