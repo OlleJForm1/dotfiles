@@ -40,6 +40,17 @@ iCmd' = getLine >>= (parseCmd >>> \case
 parseCmd :: Text -> Either String (String, [String])
 parseCmd = first show . PC.runParser parseCommand () ""
 
+readCmd :: MonadIO m => m (String, [String])
+readCmd = getLine >>= either (error . T.pack) pure . parseCmd
+
+templateCmd :: MonadIO m => m (Shell Line)
+templateCmd = getLine >>= handleParseResult . parseCmd
+  where
+    handleParseResult
+      = either
+          (error . T.pack)
+          (\(c, a) -> pure $ cmd c a mempty)
+
 data ReplCommand
   = RunCommand String [String]
   | MetaCommand Meta

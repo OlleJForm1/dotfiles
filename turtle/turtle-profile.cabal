@@ -28,7 +28,8 @@ library lib
                       relude,
                       directory,
                       filepath,
-                      network
+                      network,
+                      lens
     mixins: base hiding (Prelude)
           , relude (Relude as Prelude)
           , relude

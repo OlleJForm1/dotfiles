@@ -1,5 +1,6 @@
 :set -XOverloadedStrings
 :set +m
+
 import Turtle as TU
 import Turtle.Prelude as TU
 import qualified Control.Foldl as F
@@ -9,3 +10,4 @@ import qualified System.Directory as Dir
 
 :load <SCRIPT-LOCATION>
 :def! go (\_ -> let d = "<WORKING-DIRECTORY>" in pure $ "Dir.setCurrentDirectory " <> show d)
+
