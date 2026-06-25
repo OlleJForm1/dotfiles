@@ -78,3 +78,7 @@ key_mapper('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
 key_mapper('n', '<C-g>', '<cmd>silent !tmux neww tmux-sessionizer $HOME<CR>')
 
 
+-- haskell-tools
+key_mapper('n', '<leader>hs', ':lua require("haskell-tools").hoogle.hoogle_signature()<CR>')
+key_mapper('n', '<leader>he', 'require("haskell-tools").lsp.buf_eval_all()<CR>')
+
