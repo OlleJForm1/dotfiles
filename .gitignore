@@ -3,7 +3,7 @@
 /tmux/plugins
 /zsh/.zsh_profile
 /pwsh/profile.ps1
-/turtle/.turtle-profile.rendered.ghci
-/turtle/turtle-profile-local/*
-/turtle/src/Profile.hs
+*.rendered.ghci
+turtle/turtle-profile-local/*
+turtle/src/Profile.hs
 */dist-newstyle
