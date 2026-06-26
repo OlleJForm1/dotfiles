@@ -17,7 +17,7 @@ key_mapper('i', 'kj', '<ESC>')
 
 
 key_mapper('n', '<C-p>', ':lua require"telescope.builtin".find_files()<CR>')
-key_mapper('n', '<leader>tp', ':lua require"telescope.builtin".find_files({ hidden = true })<CR>')
+key_mapper('n', '<leader>tp', ':lua require"telescope.builtin".find_files({ hidden = true, ignored = true })<CR>')
 key_mapper('n', '<leader>ts', ':lua require"telescope.builtin".git_files()<CR>')
 key_mapper('n', '<leader>tS', ':lua require"telescope.builtin".git_files({ hidden = true })<CR>')
 key_mapper('n', '<leader>fs', ':lua require"telescope.builtin".live_grep()<CR>')
