@@ -34,6 +34,7 @@ require('aerialConf')
 require('treesittersetup')
 require('tsmsetup')
 require('foldsetup')
+require('tsfilebrowser')
 
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
