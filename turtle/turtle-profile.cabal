@@ -29,7 +29,9 @@ library lib
                       directory,
                       filepath,
                       network,
-                      lens
+                      lens,
+                      req,
+                      time
     mixins: base hiding (Prelude)
           , relude (Relude as Prelude)
           , relude
