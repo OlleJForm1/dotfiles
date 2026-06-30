@@ -25,7 +25,7 @@ vim.g.mapleader = ' '
 vim.g.OmniSharp_server_use_mono = 1
 
 require('keybinds')
-require('plugins')
+require('lazyconf')
 require('lsp')
 require('style')
 require('leapkeys')
