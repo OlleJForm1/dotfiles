@@ -14,8 +14,10 @@ library lib
     import:           warnings
     exposed-modules:  Profile
     build-depends:    base ^>=4.21.0.0,
-                      turtle-profile-shared,
-                      turtle-profile-local,
+                      turtle-shared-lib,
+                      turtle-shared-script,
+                      turtle-local-lib,
+                      turtle-local-script,
                       turtle,
                       fuzzyfind,
                       foldl,
@@ -31,7 +33,12 @@ library lib
                       network,
                       lens,
                       req,
-                      time
+                      time,
+                      csv,
+                      graphql-client,
+                      aeson-pretty,
+                      containers,
+                      vector
     mixins: base hiding (Prelude)
           , relude (Relude as Prelude)
           , relude

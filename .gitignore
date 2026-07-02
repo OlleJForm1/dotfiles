@@ -6,4 +6,5 @@
 *.rendered.ghci
 turtle/turtle-profile-local/*
 turtle/src/Profile.hs
+turtle/turtle
 */dist-newstyle

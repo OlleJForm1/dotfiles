@@ -1,5 +1,7 @@
 packages:
   .
-  ./turtle-profile-shared
-  ./turtle-profile-local
+  ./turtle/local/lib
+  ./turtle/local/script
+  ./turtle/shared/lib
+  ./turtle/shared/script
 
